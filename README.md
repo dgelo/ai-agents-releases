@@ -28,13 +28,27 @@
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### Option 1: Download Release (Recommended)
+
+```bash
+# Download latest release
+curl -LO https://github.com/dgelo/ai-agents-releases/releases/latest/download/ai-agents-server-linux-x86_64.tar.gz
+
+# Extract
+tar -xzf ai-agents-server-linux-x86_64.tar.gz
+
+# Run
+./ai-agents-server-linux-x86_64
+```
+
+The server will start at `http://localhost:8080`.
+
+### Option 2: Build from Source
+
+#### Prerequisites
 
 - 🦀 Rust 1.75+
 - 📦 Bun 1.0+ (or Node.js 18+)
-- 🗄️ SQLite 3.35+
-
-### Run Locally
 
 ```bash
 # Backend
@@ -44,7 +58,7 @@ cargo run --release
 cd ui && bun install && bun run dev
 ```
 
-### Docker
+### Option 3: Docker
 
 ```bash
 docker compose up -d
